@@ -1,0 +1,348 @@
+/* CSS Document */
+*{
+	margin: 0;
+}
+body{
+	background-color: #f0f3ef;
+}
+.yc{
+	display: none;
+}
+.xs{
+	display: block;
+}
+ul,h1,a{
+	padding:0;
+	margin:0;
+}
+ul{
+	list-style: none;
+}
+a:hover{
+	color:#c81623;
+	opacity: .8;
+}
+a{
+	text-decoration: none;
+	color:#999;
+	font-size:12px;
+}
+input,button{
+	border:0;
+	float: left
+}
+.f10{
+	color:#f10215!important;
+}
+/*声明字体*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?iiq3xg');
+  src:  url('../fonts/icomoon.eot?iiq3xg#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?iiq3xg') format('truetype'),
+    url('../fonts/icomoon.woff?iiq3xg') format('woff'),
+    url('../fonts/icomoon.svg?iiq3xg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*版心样式*/
+.w{
+	width: 1190px;
+	margin: 0 auto;
+}
+/*浮动公共类*/
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+/*快速导航栏--开始*/
+.shortcut{
+	background-color:#e3e4e5;
+	line-height: 30px;
+	font-size: 12px;
+	height: 30px;
+	border-bottom:1px solid #ddd;
+	color:#999
+}
+.city{
+	margin-left:200px;
+}
+.shortcut li{
+	float:left;
+}
+.shortcut i{
+	font-family: 'icomoon';
+	font-style: normal;
+	color: #ccc;
+}
+.apace{
+	height: 10px;
+	width:1px;
+	background-color: #ccc;
+	margin: 10px 12px 0;
+}
+.mobile{
+	position:relative
+}
+.mobile img{
+	position: absolute;
+	top:24px;
+	left: -8px;
+	padding: 3px;
+	border:1px solid #ccc;
+}
+/*快速导航栏--结束*/
+/*头部中间部分——开始*/
+.herder{
+	height:140px;
+	position: relative
+}
+.logo{
+	position: absolute;
+	top:-30px;
+	left: 0;
+	box-shadow: 0 -5px 10px rgba(0,0,0,.3);
+}
+.logo a{
+	display:block;
+	width: 190px;
+	height: 170px;
+	background: url(../images/sprite.head.png);
+}
+/*搜索框*/
+.form{
+	height: 35px;
+	width:550px;
+	position:absolute;
+	top:25px;
+	left: 320px;
+}
+.form input{
+	height: 35px;
+	width: 488px;
+	background-color: #fff;
+	padding-left: 10px;
+}
+.form button{
+	height: 35px;
+	width: 50px;
+	background-color: #f10215;
+}
+.form i{
+	font-family: 'icomoon';
+	font-style: normal;
+	color: #fff;
+}
+/*购物车*/
+.shopCar{
+	height: 33px;
+	width: 188px;
+	line-height: 33px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	position: absolute;
+	top:25px;
+	right: 95px;
+	text-align: center;
+}
+.shopCar i{
+	font-family: 'icomoon';
+	font-style: normal;
+	color: #fff;
+}
+.shopCar span{
+	height: 14px;
+	width:14px;
+	font-size: 12px;
+	background-color: #f10215;
+	color:#fff;
+	line-height: 15px;
+	border-radius: 50%;
+	position: absolute;
+	top:5px;
+	right: 35px;
+}
+/*关键词*/
+.hotwords{
+	position: absolute;
+	top:68px;
+	left:320px;
+}
+.hotwords a{
+	padding-right: 10px;
+}
+/*小导航栏*/
+.navitems{
+	height: 40px;
+	width: 790px;
+	line-height: 40px;
+	position: absolute;
+	left:200px ;
+	bottom: 0;
+}
+.navitems li{
+	float: left;
+	margin-left: 20px;
+}
+.navitems li a{
+	color: #111;	
+	font-size: 14px;
+}
+.navitems li a:hover{
+	color: #f10215;
+}
+.navitems .apace{
+	margin-top:17px;
+}
+/*爆款*/
+.super{
+	position:absolute;
+	bottom:5px;
+	right: 0;
+}
+/*头部中间部分——结束*/
+
+/*底部——开始*/
+	/*介绍——开始*/
+footer{
+	height: 560px;
+	margin-top:100px;
+	background-color: #EAEAEA;
+}
+.introduce{
+	padding: 30px 0;
+	border-bottom: 2px solid #DEDEDE;
+	overflow: hidden;
+}
+.introduce li{
+	height: 43px;
+	line-height: 43px;
+	width: 297px;
+	float: left;
+	position: relative;
+}
+.introduce li h5{
+	position:absolute;
+	top:0px;
+	width: 36px;
+	height: 43px;
+	left: 38px;
+	background: url(../images/sprite.footer.png) no-repeat;
+	background-position:0 -192px;
+	text-indent: -999em;
+}
+.introduce li:nth-child(2) h5{
+	background-position:-41px -192px;
+}
+.introduce li:nth-child(3) h5{
+	background-position:-82px -192px;
+}
+.introduce li:nth-child(4) h5{
+	background-position:-123px -192px;
+}
+.introduce li p{
+	font-size: 18px;
+	padding-left: 82px;
+	font-weight: 700;
+	color: #111
+}
+	/*介绍——开始*/
+	/*服务——开始*/
+.serve{
+	padding-top: 25px;
+	height: 175px;
+	border-bottom: 2px solid #DEDEDE;
+}
+.serve dl{
+	float:left;
+	width: 198px;
+}
+.serve dt,.scope h5{
+	height: 27px;
+	color: #666;
+	font-weight: 700;
+}
+.serve dd{
+	height: 23px;
+	color: #666;
+}
+.scope{
+	height: 150px;
+	width:200px;
+	background: url(../images/sprite.footer.png)
+}
+.scope h5{ 
+	padding-left: 36px;
+}
+.scope p{
+	font-size: 12px;
+	color: #666;
+	width: 170px;
+}
+.scope a{
+	margin-left: 120px;
+}
+	/*服务——结束*/
+	/*版权模块——开始*/
+.copyright{
+	text-align: center;
+	padding-top: 20px;
+	color: #999;
+	font-size: 12px;
+}
+.copyright span{
+	padding: 0 10px;
+	font-size: 12px;
+}
+.copyright div{
+	padding-top: 15px;
+}
+.copyright div p{
+	line-height: 20px;
+}
+.sign a i{
+	display: inline-block;
+	height: 12px;
+	width: 15px;
+	margin-right: 5px;
+	background: url(../images/sprite.footer.png) no-repeat;
+	background-position: -109px -155px;
+}
+.sign a:nth-child(2) i{
+	background-position: -128px -155px;
+}
+.sign a:nth-child(3) i{
+	background-position: -148px -155px;
+}
+.sign a:nth-child(4) i{
+	background-position: -168px -155px;
+}
+.sign a:nth-child(5) i{
+	background-position: -108px -172px;
+}
+.symbol{
+	padding: 40px 0;
+}
+.symbol a{
+	display: inline-block;
+	height: 32px;
+	width: 103px;
+	background: url(../images/sprite.footer.png) no-repeat;
+	background-position: -204px -110px;
+}
+.symbol a:nth-child(2){
+	background-position: -204px -74px;
+}
+.symbol a:nth-child(3){
+	background-position: -204px -36px;
+}
+.symbol a:nth-child(4){
+	background-position: -204px 0;
+}
+.symbol a:nth-child(5){
+	background-position:0 -155px;
+}
+	/*版权模块——结束*/
+/*底部——结束*/

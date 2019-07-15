@@ -1,0 +1,773 @@
+/* CSS Document */
+/*主干部分*/
+.grid{
+	height: 480px;
+}
+	/*大导航栏*/
+.grid-row1{
+	height: 100%;
+	width: 190px;
+	background-color: #fefefe;
+	position: relative;
+}
+.grid-row1 ul{
+	padding: 6px 0;
+}
+/*	隐藏导航菜单*/
+.grid-row1 li:hover .a1{
+	display: block;
+}
+.grid-row1 .a1{
+	width: 1000px;
+	position: absolute;
+	top:0;
+	left: 190px;
+	display: none;
+	height: 100%;
+	background-color: #fff;
+	z-index: 999;
+}
+.a1 .a1-l{
+	width: 800px;
+	height: 460px;
+	margin: 20px 0 0 20px;
+}
+.a1 .a1-lT{
+	height: 25px;
+	width: 770px;
+}
+.a1 .a1-lT a{
+	display: inline-block;
+	height: 25px;
+	background-color: #333;
+	color: #fff;
+	font-size: 12px;
+	padding-left: 10px;
+	line-height: 25px;
+	margin:0 5px 0 0;
+}
+.a1-lT a span{
+	margin-left: 5px;
+	margin-right: 10px;
+}
+.a1 .a1-lB{
+	height: 430px;
+	width: 770px;
+	margin-top: 5px;
+}
+.a1 .a1-lB dt,
+.a1 .a1-lB dd{
+	margin-top:5px;
+}
+.a1 .a1-lB dt{
+	float: left;
+	width: 70px;
+	height: 25px;
+	line-height: 25px;
+	color: #333;
+	text-align: right;
+	margin-right:5px;
+}
+.a1-lB dt a{
+	color: #333!important;
+}
+.a1 .a1-lB dd{
+	width: 680px;
+	float: left;
+}
+.a1-lB dd a{
+	color: #666!important;
+	border-left: 1px solid #e0e0e0;
+	padding-left:10px; 
+	white-space: nowrap;
+}
+.a1 .a1-lB a{
+	font-size: 12px;
+}
+.a1 .a1-r{
+	width: 178px;
+	height: 100%;
+}
+.a1 .a1-r .a1-rT{
+	margin-top: 17px;
+	height: 155px;
+	width: 168px;
+}
+.a1-r .a1-rT a{
+	float: left;
+	height: 35px;
+	width: 80px;
+	margin-top: 3px;
+}
+.a1-rT a img{
+	width: 100%;
+	height: 100%;
+}
+.a1 .a1-r .a1-rB{
+	width: 168px;
+	height: 269px;
+}
+.grid-row1 ul li{
+	padding-left: 17px;
+	color: #626262;
+	font-size: 14px;
+}
+.grid-row1 ul li:hover{
+	background-color: #DDDDDD;
+}
+.grid-row1 li a{
+	margin: 0 2px;
+	font-size: 14px;
+	color: #626262;
+	line-height: 26px;
+}
+.grid-row1 li a:hover{
+	color:#f10215;
+}
+
+/*轮播图*/
+.grid-row2{
+	height: 100%;
+	width: 790px;
+	margin-left: 10px;
+}
+.grid-row2-left{
+	width: 590px;
+	height: 470px;
+	overflow: hidden;
+	padding-top: 10px;
+	position: relative;
+}
+.grid-row2-left div{
+	width: 5900px;
+	height: 470px;
+	position: absolute;
+}
+.grid-row2-left div a{
+	width: 590px;
+	height: 470px;
+	float:left;
+	display: block;
+}
+.arrow-l,
+.arrow-r{
+	position: absolute;
+	top:50%;
+	width: 24px;
+	height: 40px;
+	background: rgba(0,0,0,0.3);
+	text-align: center;
+	color:rgba(255,255,255,0.7);
+	line-height: 40px;
+	transform: translateY(-50%);
+}
+.arrow-l:hover,
+.arrow-r:hover{
+	background: rgba(0,0,0,0.5);
+	color:rgba(255,255,255,1);
+}
+.arrow-l{
+	left: 0;
+}
+.arrow-r{
+	right:0;
+}
+.circle{
+	position: absolute;
+	height: 20px;
+	bottom: 30px;
+	left: 50px;
+}
+.circle li{
+	width: 8px;
+	height: 8px;
+	border:2px solid #bdc2be; 
+	border-radius:50%;
+	float: left;
+	margin-left: 5px;
+}
+.circle .circle-xz{
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(255,255,255,.8);
+	border:2px solid #fff;
+}
+	/*轮播图右侧图片*/
+.grid-row2-right{
+	width: 190px;
+	height: 100%;
+}
+.grid-row2-right div{
+	width: 190px;
+	height: 150px;
+	margin-top: 10px;
+}
+.grid-row2-right div img{
+	width:100%;
+	height: 100%
+}
+	/*右侧*/
+.grid-row3{
+	height: 470px;
+	width: 190px;
+	margin-top: 10px;
+	background-color: #fff;
+}
+.row3-top{
+	margin: 0 15px;
+	width:160px;
+	height: 280px;
+	border-bottom: 1px solid #efeeee;
+	text-align: center;
+	color: #8f8f8f;
+	font-size: 12px;
+	line-height: 20px;
+}
+.r3Logo{
+	height: 65px;
+	width: 65px;
+	margin : -10px auto 10px;
+}
+.r3Logo img{
+	width: 55px;
+	height: 55px;
+	border:5px solid #e3e1df;
+	border-radius: 50%;
+	box-shadow: 5px 5px 20px rgba(0,0,0,.2);
+}
+.r3Menber{
+	margin:10px 0; 
+}
+.r3Menber a{
+	display: inline-block;
+	width: 70px;
+	height: 25px;
+	line-height: 25px;
+	border-radius:12.5px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,.2);
+	color: #f10215;
+	background-color:#fff;
+}
+.r3Menber a:nth-child(2){
+	background-color: #363636;
+	color: #e5d790;
+}
+.r3Menber a:hover{
+	color:#fff;
+	background-color: #f10215;
+}
+.news{
+	
+}
+.newsT{
+	overflow:hidden;
+	padding-top:7px;
+}
+.newsT h5{
+	color:#000;
+	font-size: 13px;
+}
+.newsB{
+	width: 160px;
+	text-align: left;
+}
+.newsB ul{
+	height:90px;
+	padding-top: 6px;
+}
+.newsB li{
+	padding-bottom: 1px;
+	height: 20px;
+	line-height: 20px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 158px;
+}
+.newsB a{	
+	color: #666;
+}
+.newsB a:hover{
+	color: #f10215;
+}
+.newsB a span{
+	float: left;
+	height: 16px;
+	line-height: 16px;
+	margin-right: 5px;
+	text-align: center;
+	width: 35px;
+	color: #fff;
+	border-radius: 2px;
+	background-color: #90b0c6;
+}
+.newsB li:nth-child(2) span{
+	background-color:#e0b95a;
+}
+.newsB li:nth-child(4) span{
+	background-color:#e47f7f;
+}
+.newsB li:nth-child(3) span{
+	background-color:#fa2d2d;
+}
+.row3-bottom{
+	height: 168px;
+	width: 168px;
+	margin: 20px 11px 10px;
+}
+.row3-bottom li{
+	text-align: center;
+	float: left;
+	height: 56px;
+	width: 42px;
+}
+.row3-bottom li a{
+	margin-top: 10px;
+	display: block;
+	color: #d1c5ae;
+}
+.row3-bottom li a:hover{
+	color:#f10215;
+}
+.row3-bottom a i{
+	font-family: 'icomoon';
+	font-style: normal;
+	font-size: 20px;
+}
+	/*秒杀列表*/
+.seckill{
+	overflow: hidden;
+	height: 275px;
+	margin-top:30px; 
+}
+.seckill1{
+	width: 190px;
+	height: 100%;
+	background-color: #e83632;
+	text-align: center;
+}
+.seckill1 a{
+	height: 225px;
+	padding-top:50px; 
+	display: block;
+	color:#fff;
+}
+.seckill1 .sk-tit{
+	font-size: 34px;
+}
+.seckill1 .sk-sub{
+	font-size: 20px;
+	opacity:.5;
+}
+.seckill1 .sk-ico{
+	margin: 10px auto;
+	height: 33px;
+	width: 20px;
+	display: block;
+	background:url(../images/sprite.seckill.png);
+	background-position: -35px -25px;
+}
+.seckill1 .sk-js{
+	font-size: 16px;
+}
+.seckill1 .sk-sj{
+	margin:20px 30px;
+	position: relative;
+	height: 40px;
+}
+.seckill1 .sk-sj div{
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	font-weight: 700;
+	background-color: #2f3430;
+	color: #fff;
+}
+.seckill1 .sk-sj .sk-sj0{
+	width: 100%;
+	height: 1px;
+	background-color: #e83632;
+	position: absolute;
+	top:50%;
+	left: 0;
+}
+.seckill1 .sk-sj .sk-sj2{
+	margin: 0 5px;
+}
+.seckill2{
+	width: 800px;
+	height: 100%;
+	background-color: #fff;
+}
+.seckill2 .sk2-a{
+	padding: 40px 19px 25px;
+	width: 160px;
+	height: 210px;
+	border-right: 2px solid #f0f3ef;
+	text-align: center;
+	float: left;
+}
+.seckill2 .sk2-a img{
+	width: 140px;
+	height: 140px;
+	
+}
+.seckill2 .sk2-a p{
+	margin: 10px 0;
+	font-size: 13px;
+	width: 160px;
+	height: 30px;
+	line-height: 30px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.seckill2 .sk2-a .sk2-span{
+	border: 1px solid #f10215;
+	border-right: 2px solid #f10215;
+	width: 160px;
+	height: 20px;
+	line-height: 20px;
+}
+.seckill2 .sk2-span span{
+	text-align: center;
+	width: 78px;
+	height: 20px;
+	line-height: 20px;
+	display: inline-block;
+}
+.seckill2 .sk2-span span:nth-child(1){
+	background-color: #f10215;
+	color: #fff;
+	font-weight: 700;
+	font-size: 14px;
+}
+.seckill2 .sk2-span span:nth-child(2){
+	text-decoration: line-through;
+}
+.seckill3{
+	width: 200px;
+	height: 100%;
+	background-color: #FFFFFF;
+}
+.seckill3 a{
+	display: block;
+	width: 180px;
+	height: 260px;
+	margin: 7px 10px;
+}
+.seckill3 a img{
+	width: 100%;
+	height: 100%;
+}
+/*	精选商品公共类*/
+.handpick{
+	margin-top: 30px;
+	height: 960px;
+}
+.handpick .hpT,
+.handpick .hpB{
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.handpick .hp-row{
+	width: 390px;
+	height: 450px;
+	float: left;
+	background-color: #fff;
+}
+.handpick .hp-row:nth-child(2),
+.handpick .hp-row:nth-child(5){
+	margin: 0 10px;
+}
+.handpick .hp-row .hp-list1{
+	margin: 0 20px;
+	height: 60px;
+	line-height: 60px;
+}
+.hp-list1 a{
+	font-size: 15px;
+}
+.hp-list1 a i{
+	margin: 18px 3px;
+	float: left;
+	display:block;
+	width: 23px;
+	height: 23px;
+	background: url(../images/index.png);
+}
+.hp-list1 a h3{
+	float: left;
+	display:block;
+	font-size: 25px;
+	color: #000;
+	font-weight:normal;
+}
+.handpick .hp-row .hp-list2{
+	margin: 0 20px;
+	height: 390px;	
+}
+.hp-list2 .hp-list2T{
+	height: 360px;
+	border-bottom: 2px solid #f7f7f7;
+}
+.hp-list2 .hp-list2B{
+	width: 100%;
+	height: 30px;
+}
+	
+	/*导航圆点*/
+.hp-dot{
+	margin: 0 auto;
+	height: 30px;
+	width: 70px;
+	list-style: none;
+}
+.hp-dot li{
+	margin-top:8px;
+	margin-right: 5px;
+	float: left;
+	width: 8px;
+	height: 8px;
+	border: 1px solid #bdc2be;
+	border-radius: 50%;
+}
+.hp-dot .dot-Selected{
+	background-color: #eb3436;
+	border:1px solid #eb3436;
+	box-shadow: 0 0 8px rgba(235,52,54,.9);
+}
+	/*精选商品1*/
+.hp-rkT ul{
+	height: 35px;
+	line-height: 35px;
+	margin: 0 -20px;
+	background-color: #f7f7f7;
+	overflow: hidden;
+}
+.hp-rkT ul li{
+	text-align: center;
+	float: left;
+	width: 78px;
+}
+.hp-rkT li a{
+	display: block;
+	color: #666;
+}
+.hp-rkT li a:hover{
+	display: block;
+	color: #f10215;
+}
+.hp-rkB{
+	height: 320px;
+	width: 100%;
+	overflow: hidden;
+}
+.rkB-ranking{
+	display: block;
+	width: 350px;
+	height: 110px;
+	position: relative;
+}
+.rkB-ranking img{
+	position: absolute;
+	top:12px;
+	left:5px;
+}
+.rkB-ranking div{
+	float: left;
+	margin-top: 32px;
+	margin-left: 100px;
+	width: 260px;
+	height: 40px;
+}
+.rkB-ranking div p{
+	width: 200px;
+	height: 30px;
+	float: left;
+	font-size: 12px; 
+	overflow: hidden;
+	margin-top: 5px;
+	color: #333;
+}
+.rkB-ranking:hover div p{
+	color:#f10215;
+}
+.rkB-ranking div span{
+	width: 30px;
+	height: 40px;
+	font-size: 32px;
+	float: left;
+	font-weight: 700;
+}
+.ranking-span1{
+	color: #e74240;
+}
+.ranking-span2{
+	color: #ed713d;
+}
+.ranking-span3{
+	color: #feb185;
+}
+	/*精选商品2*/
+.hp-recom {
+	height: 360px;
+	overflow: hidden;
+	width: 350px;
+	background:url(../images/sprite.goodrec.jpg);
+}
+.hp-recom a{
+	height: 120px;
+	display: block;
+	width: 350px;
+	position: relative;
+}
+.hp-recom .hp-recomImg{
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top:20px;
+	left: 15px;
+}
+.hp-recomT{
+	height: 80px;
+	width: 200px;
+	color: #fff;
+	float: left;
+	margin:17px 0 0 110px; 
+}
+.hp-recomT h4{
+	font-size: 14px;
+}
+.hp-recomT p{
+	font-size: 12px;
+	width: 200px;
+	height: 15px;
+	line-height: 15px;
+	margin-top: 5px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.hp-recomT img{
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	margin-top:10px;
+}
+.hp-recomT span{
+	color:#c6c6c6;
+	display: block;
+	margin: -25px 0 0 40px;
+}
+	/*精选商品3*/
+.hp-ticket a{
+	display: block;
+	overflow: hidden;
+	height: 120px;
+	width: 350px;
+	background-color: #f6f6f6;
+	border-radius:10px;
+	font-size: 14px;
+	position: relative;
+}
+.hp-ticket a:nth-child(2){
+	background-color: #eeefed;
+}
+.hp-ticket a::after{
+	content: "";
+	width: 16px;
+	height: 16px;
+	display: block;
+	position: absolute;
+	border-radius: 50%;
+	top: -8px;
+	right: 50px;
+	background-color: #fff;
+}
+.hp-ticket a::before{
+	content: "";
+	width: 16px;
+	height: 16px;
+	display: block;
+	position: absolute;
+	border-radius: 50%;
+	bottom:-8px;
+	right: 50px;
+	background-color: #fff;
+}
+.ticket-img{
+	overflow: hidden;
+	text-align: center;
+	padding: 10px 0;
+	width: 90px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: #fff;
+	position: absolute;
+	top: 15px;
+	left:10px;
+}
+.ticket1-l{
+	color: #e33333;
+	margin: 8px 0 0 110px;
+	float: left;
+	width: 160px;
+	height: 100px;
+}
+.ticket1-l i{
+	font-size: 16px;
+}
+.ticket1-l span{
+	font-size: 34px;
+}
+.ticket1-l h5{
+	font-size: 14px;
+	color: #b1b3b0;
+}
+.ticket1-l p{
+	margin-top: 5px;
+	color: #767b77;
+	width: 160px;
+	height: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.ticket1-r{
+	font-size: 12px;
+	margin-top: 10px;
+	float: right;
+	width: 1px;
+	margin-right: 40px;
+	color: #333;
+}
+	/*精选商品4*/
+.hp-me a{
+	font-size: 15px;
+	width: 350px;
+	height: 350px;
+	display: block;
+	overflow: hidden;
+	text-align: center;
+}
+.hp-me a q{
+	display: block;
+	width: 350px;
+}
+.hp-me a .hp-qname{
+	margin-top: 13px;
+	color: #000;
+	height: 20px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.hp-me a .hp-qjs{
+	color: #999;
+	height: 40px;
+	overflow: hidden;
+	margin: 13px 0;
+}
+	/*精选商品5*/
+	/*精选商品6*/
